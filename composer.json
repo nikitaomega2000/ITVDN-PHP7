@@ -1,0 +1,18 @@
+{
+    "name": "sweetbrides/dates",
+    "description": "Find days number",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikita",
+            "email": "nikita.omega2000@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SweetBrides\\": "src"
+        }
+    }
+}
