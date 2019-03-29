@@ -17,7 +17,7 @@ class Birthdays
     public function __construct($birthDate)
     {
         $this->birthDate = $birthDate;
-        $this->todayDate = date("Y-m-d");
+        $this->todayDate = date('Y-m-d');
     }
 
     public function findTotalDays()
