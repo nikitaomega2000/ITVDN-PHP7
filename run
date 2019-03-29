@@ -1,16 +1,12 @@
 #!/usr/bin/env php
 <?php
 
-  $birthDate = "1984-08-01";
-  $todayDate = date("Y-m-d");
-
-  $birthTime = strtotime($birthDate);
-  $todayTime = strtotime($todayDate);
-  
-  $totalSecs = $todayTime - $birthTime;
-  $totalHours = floor($totalSecs / 3600);
-  $totalDays = floor($totalHours / 24);
-  
-  echo "$birthDate : $totalSecs Seconds, $totalHours Hours, $totalDays Days\n";
+    $birthDate = "1984-08-01";
+    include "src/Dates/Birthdays.php";
+    $days = new \SweetBrides\Dates\Birthdays($birthDate);
+    $totalDays = $days->findTotalDays();
+    $totalHours = $days->findTotalHours();
+    $totalSecs = $days->findTotalSecs();
+    echo "$birthDate : $totalSecs Seconds, $totalHours Hours, $totalDays Days\n";
 
 ?>
